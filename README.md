@@ -4,7 +4,7 @@
 分享一个用云开发实现微信小程序商城项目，对于想直接套用模板的小伙伴非常友好，里面的数据库我都导出来放在文件夹里了，只需创建对应表再导入即可，对比其他的一般都不给数据库，这个非常方便！！！
 可以扫码体验下：
  https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg
-这个微信小程序是根据医疗保健课程制作的，对页面Ui做了处理，现在分享出来供大家互相学习，喜欢记得start下哦~
+对页面Ui做了处理，现在分享出来供大家互相学习，喜欢记得start下哦~
 
 
 ![输入图片说明](https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg)

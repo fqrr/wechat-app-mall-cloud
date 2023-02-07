@@ -1,0 +1,19 @@
+<!--pages/Cate/Cate.wxml-->
+<view class="all">
+    <!-- 左分类 -->
+    <scroll-view class="fenlei" scroll-y="true">
+        <view class="flfor" wx:for="{{fenlei1}}" bindtap="getCate" data-cate="{{item.cateName}}" wx:key="_id">
+            <view>{{item.cateName}}</view>
+        </view>
+    </scroll-view>
+
+    <!-- 右分类 -->
+    <scroll-view class="fenlei1" scroll-y="true">
+        <view class="flex1">
+            <view bindtap="getShopName" class="flfor2" wx:for="{{fenlei2.shopcate}}" wx:key="_id" data-catename="{{item.name}}">
+                <image src="{{item.src}}"></image>
+                <view>{{item.name}}</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

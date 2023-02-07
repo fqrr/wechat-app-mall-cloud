@@ -1,0 +1,39 @@
+/* pages/setShop/setShop.wxss */
+page {
+    background-color: #F2F2F2;
+    height: 100%;
+}
+.w {
+  height: 95%;
+    /* display: flex; */
+    padding: 10rpx 20rpx;
+    text-align: left;
+}
+.item {
+  height: 100%;
+    margin-top: 20rpx;
+    background-color: #fff;
+    padding: 10rpx 20rpx;
+    border-radius: 30rpx;
+}
+.item .title{
+    font-size: 36rpx;
+    margin-bottom: 10rpx;
+    color: #62BAE7;
+}
+.photo {
+  margin-top: 30rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.photo image{
+    width: 250rpx;
+    height: 260rpx;
+}
+.photo .detail{
+    width: 300rpx;
+    height: 400rpx;
+}
+.cate{
+  margin-bottom: 30rpx;
+}

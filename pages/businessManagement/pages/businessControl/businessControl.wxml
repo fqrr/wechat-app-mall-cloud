@@ -1,0 +1,15 @@
+<!--pages/businessControl/businessControl.wxml-->
+<view class="w">
+    <view class="item" bindtap="goControlShop">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.pdowncc.com%2Fupload%2F2018-7%2F2018727911393682.png&refer=http%3A%2F%2Fpic.pdowncc.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672452439&t=6649a875e8b44dabedd96f937f04aa56"></image>
+        <text>商品管理</text>
+    </view>
+    <view class="item" bindtap="goOrder">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimages.liqucn.com%2Fmini%2F120x120%2Fimg%2Fh220%2Fh18%2Fimg_localize_5df5265a2d08b7e4b37949f92963cfde_128x128_120x120.png&refer=http%3A%2F%2Fimages.liqucn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672452490&t=209be9664ed8a107a9fd14ef28c5eb5f"></image>
+        <text>订单管理</text>
+    </view>
+    <view class="item" bindtap="goShangchuan">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fd00.paixin.com%2Fthumbs%2F1842549%2F36859403%2Fstaff_1024.jpg&refer=http%3A%2F%2Fd00.paixin.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672452526&t=4c6759abc6539e9c47629e1fd97980a4"></image>
+        <text>商品上传</text>
+    </view>
+</view>

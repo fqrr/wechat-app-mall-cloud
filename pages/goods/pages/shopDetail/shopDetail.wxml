@@ -1,0 +1,42 @@
+<!--pages/shopDetail/shopDetail.wxml-->
+<!-- 商品详情页 -->
+<!-- 图片 -->
+<view class="top">
+    <swiper circular="true" indicator-dots="true" indicator-color="#FFFFFF" indicator-active-color="#FF5000">
+        <swiper-item wx:for="{{searchResult.src}}" wx:key="_id">
+            <image src="{{item}}" ></image>
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 价钱 -->
+<view class="content">
+    <view class="mon_sal">
+        <text class="money">￥{{searchResult.price}}</text>
+        <text class="sales">销量：{{searchResult.sales}}</text>
+    </view>
+    <view class="title">
+        {{searchResult.name}}
+    </view>
+</view>
+
+<!-- 商品介绍 -->
+<view class="jieshao">
+    商品介绍
+</view>
+<view class="shopPhoto">
+    <block wx:for="{{searchResult.detailSrc}}" wx:key="_id">
+        <image mode="widthFix" src="{{item}}"></image>
+    </block>
+    <view class="bottomText">已经到底啦~~~</view>
+</view>
+
+<!-- 购物车，立即购买 -->
+<view class="carBuy">
+    <view class="caricon" bindtap="goCar">
+        <image src="/images/car3.png"></image>
+        <text>购物车</text>
+    </view>
+    <view class="car" bindtap="inCar">加入购物车</view>
+    <view class="buy" bindtap="collection">收藏商品</view>
+</view>

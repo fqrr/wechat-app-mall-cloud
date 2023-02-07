@@ -1,0 +1,68 @@
+<!-- 个人中心 -->
+<view class="user">
+
+    <block wx:if="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+    <view>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  <view style="margin-left:-190rpx;" bindtap="person">修改个人信息</view>
+
+    </block>
+</view>
+
+<!-- 内容区 -->
+<view class="content">
+    <!-- 我的订单 -->
+    <view class="dingdan">
+        <!-- 我的订单 -->
+        <view class="dingdanText">我的订单</view>
+        <!-- 图标 + 文字 -->
+        <view class="controlIcon">
+            <view class="icon" bindtap="address" data-type="0">
+                <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.51yuansu.com%2Fpic3%2Fcover%2F01%2F09%2F41%2F590334edead0d_610.jpg&refer=http%3A%2F%2Fbpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672411911&t=383a29995e37e8101e749af33e195fb3"></image>
+                <view>已完成订单</view>
+            </view>
+            <view class="icon" bindtap="address" data-type="1">
+                <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.soutu123.com%2Felement_origin_min_pic%2F01%2F52%2F00%2F965745e2aa972c5.jpg%21%2Ffw%2F700%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue&refer=http%3A%2F%2Fpic.soutu123.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672413176&t=8be9a1a4cdc3862b80c85e8a680eb046"></image>
+                <view>待发货</view>
+                <view class="poNum" wx:if="{{fahuo}}">{{fahuo}}</view>
+            </view>
+            <view class="icon" bindtap="address" data-type="2">
+                <image src="https://img1.baidu.com/it/u=11018874,243138846&fm=253&fmt=auto&app=138&f=JPEG?w=524&h=500"></image>
+                <view>待收货</view>
+                <view class="poNum" wx:if="{{shouhuo}}">{{shouhuo}}</view>
+            </view>
+            <view class="icon" bindtap="address" data-type="3">
+                <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F39%2F91%2F18573cdcc05c863.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672453193&t=3b6f6a2b040db90bbc2c3eb8526c9704"></image>
+                <view>评论</view>
+            </view>
+            <view class="icon" bindtap="address" data-type="4">
+                <image src="https://img1.baidu.com/it/u=3256526110,4224615162&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+                <view>收货地址</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 收藏 + 商家入口 -->
+    <view class="address">
+        <view 
+        wx:for="{{result1}}" 
+        class="addItem" 
+        wx:key="index"
+        bindtap="coll"
+        data-i="{{item.status}}"
+        data-goId="{{item._id}}"
+        >
+            <image src="{{item.src}}"></image>
+            <view>{{item.title}}</view>
+        </view>
+    </view>
+
+    <!-- 联系客服 -->
+    <button open-type="contact" bindcontact="con">联系客服</button>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/address/address.wxml-->
+<view class="tex" wx:if="{{flag}}">暂无地址，请点下方添加~~~</view>
+<view class="con">
+    <view class="item" wx:for="{{res}}" wx:key="_id" bindtap="chooseAddress" data-addressid="{{item._id}}">
+        <view class="name">{{item.userName}} <text>{{item.telNumber}}</text></view>
+        <view class="address">{{item.provinceName}} {{item.cityName}} {{item.countyName}} {{item.detailInfo}}</view>
+        <view class="de" bindtap="de" data-addressid="{{item._id}}">删除</view>
+    </view>
+</view>
+
+<view class="bottom">
+    <view bindtap="address">+ 添加地址</view>
+</view>

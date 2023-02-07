@@ -1,0 +1,38 @@
+<!--pages/stayfahuo/stayfahuo.wxml-->
+<!-- 待发货 -->
+<view class="top">
+    {{status}}
+</view>
+<view class="w">
+    <!-- 订单 -->
+    <view class="dingdan">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.51yuansu.com%2Fpic3%2Fcover%2F01%2F09%2F41%2F590334edead0d_610.jpg&refer=http%3A%2F%2Fbpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672411911&t=383a29995e37e8101e749af33e195fb3"></image>
+        <view class="dingTiem">
+            <view class="ding">{{msg}}</view>
+            <view class="time">下单时间:{{result.time}}</view>
+        </view>
+    </view>
+    <!-- 收货 -->
+    <view class="shouhuo">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F39%2F91%2F18573cdcc05c863.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672453193&t=3b6f6a2b040db90bbc2c3eb8526c9704"></image>
+        <view class="controlAddress">
+            <view class="shouhuoren">收货人: {{result.username}}</view>
+            <view class="address">收货地址: {{result.address}}</view>
+        </view>
+    </view>
+    <!-- 商品 -->
+    <view class="shop">
+        <image src="{{result.productSrc[0]}}"></image>
+        <!-- 商品名 + 价格 -->
+        <view class="titlePrice">
+            <!-- 商品名 -->
+            <view class="title">
+                {{result.productName}}
+            </view>
+            <!-- 价格 -->
+            <view class="price">
+                <text class="pri">￥{{result.productPrice}}</text> <text class="pNum">×{{result.productNum}}</text>
+            </view>
+        </view>
+    </view>
+</view>

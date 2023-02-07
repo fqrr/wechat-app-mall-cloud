@@ -1,0 +1,65 @@
+/* pages/address/address.wxss */
+page {
+    background-color: #F2F2F2;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bottom {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 30rpx;
+    background-color: #62BAE7;
+    color: #fff;
+}
+
+.tex {
+    padding: 20rpx;
+    font-size: 28rpx;
+    color: #999;
+}
+
+/* 遍历地址 */
+.item {
+    box-sizing: border-box;
+    margin-top: 30rpx;
+    width: 95%;
+    padding: 38rpx;
+    background-color: #fff;
+    border-radius: 50rpx;
+    font-weight: 700;
+    font-size: 36rpx;
+}
+
+.con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.con text {
+    font-size: 26rpx;
+    color: #999;
+    font-weight: 400;
+}
+
+.con .address {
+    font-size: 30rpx;
+    font-weight: 400;
+    width: 100%;
+    word-break:break-all;
+}
+.de {
+    font-size: 26rpx;
+    margin-top: 10rpx;
+    font-weight: 400;
+    float: right;
+}

@@ -1,0 +1,60 @@
+<!-- 修改商品详情 -->
+<form bindsubmit="submit">
+    <view class="f">
+        <!-- 商品名 -->
+        <view class="pName">
+            <text>商品名：</text>
+            <view>
+                <textarea value="{{resShop.name}}" type="text" maxlength="100" name="proName"></textarea>
+            </view>
+        </view>
+        <view class="p">
+            <view>商品库存：</view>
+            <input value="{{resShop.num}}" type="text" name="proNum" type="number" bindblur="mobileInput"></input>
+        </view>
+        <view class="p">
+            <view>商品价格：</view>
+            <input value="{{resShop.price}}" type="text" name="proPrice" bindblur="mobileInput"></input>
+        </view>
+        <view class="p">
+            <view>销量：</view>
+            <input type="text" disabled="true" value="{{resShop.sales}}" name="proSales" type="number" style="border: 0;"></input>
+        </view>
+        <view class="cate">
+            <view>分类：</view>
+            <radio-group name="cate">
+                <block wx:for="{{result}}" wx:key="_id">
+                    <radio checked="{{item.name==resShop.shopcate?true:false}}" value="{{item.name}}" class="cateItem">{{item.name}}</radio>
+                </block>
+            </radio-group>
+        </view>
+        <!-- 商品展示图 -->
+        <view class="zhan">
+            <view wx:for="{{resShop.src}}" wx:key="index" class="zhanshi">
+                <image src="{{item}}"></image>
+                <view bindtap="del" data-i="{{index}}" data-n="1">删除</view>
+            </view>
+        </view>
+        <button class="sZhanShi" bindtap="sZhanShi">上传商品展示图</button>
+        <!-- <button bindtap="del">测试</button> -->
+
+
+        <!-- 商品详情图 -->
+        <view class="zhan">
+            <view wx:for="{{resShop.detailSrc}}" wx:key="index" class="zhanshi">
+                <image src="{{item}}" class="detail"></image>
+                <view bindtap="del" data-i="{{index}}" data-n="2">删除</view>
+            </view>
+        </view>
+        <button class="sDetail" bindtap="sDetail">上传商品详情图</button>
+
+        <button class="sub" form-type="submit">修改</button>
+        <button bindtap="delShop" style="margin-top: 40rpx;">删除整个商品</button>
+    </view>
+
+</form>
+<view wx:for="{{bigImg}}" wx:key="index">
+    <image src="{{item}}"></image>
+    <view bindtap="del" data-i="{{index}}">删除</view>
+</view>
+<button bindtap="shangchuan">选择图片</button>

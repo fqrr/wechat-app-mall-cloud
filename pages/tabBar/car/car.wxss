@@ -1,0 +1,175 @@
+/* pages/car/car.wxss */
+/* 购物车页面 */
+page {
+    background-color: #F2F2F2;
+}
+
+/* 1. */
+.carList {
+    display: flex;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 50rpx;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 20rpx;
+    height: 210rpx;
+    position: relative;
+    padding-bottom: 70rpx;
+}
+
+/* 删除 */
+.carList .de {
+    position: absolute;
+    bottom: 26rpx;
+    right: 48rpx;
+    font-size: 22rpx;
+}
+
+.carList:first-of-type {
+    margin-top: 20rpx;
+}
+
+/* 图片 */
+.carList image {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 30rpx;
+}
+
+/* 内容 */
+.carList .content {
+    height: 180rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16rpx;
+}
+
+/* 标题 */
+.carList .content .title {
+    width: 400rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* 价格数量 */
+.carList .content .priNum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 价格 */
+.carList .content .priNum .price {
+    color: #F2270C;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+/* 控制数量 */
+.carList .content .priNum .controlNum {
+    display: flex;
+    box-sizing: border-box;
+    width: 200rpx;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20rpx;
+}
+
+/* 数量 */
+.carList .content .priNum .controlNum .ipt {
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 76rpx;
+    height: 30rpx;
+    background-color: #F2F2F2;
+    /* margin-right: 20rpx; */
+    line-height: 30rpx;
+}
+
+/* 加减号 */
+.carList .content .priNum .controlNum .add1 {
+    padding: 20rpx;
+}
+
+
+/* 2. 底部结算 */
+.bottom {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 85rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    align-items: center;
+    background-color: #fff;
+    border-top: 2rpx solid #999;
+}
+
+/* 总计 + 去结算 */
+.bottom .chuli {
+    display: flex;
+    align-items: center;
+}
+
+/* 删除选中 */
+.bottom .deAll {
+    height: 65rpx;
+    text-align: center;
+    line-height: 65rpx;
+    padding: 0 20rpx;
+    font-size: 24rpx;
+    background-color: #FF852A;
+    color: #fff;
+    border-radius: 50rpx;
+}
+
+/* 总计 */
+.bottom .chuli .allPrice {
+    margin-right: 20rpx;
+    font-size: 28rpx;
+}
+
+.bottom .chuli .allPrice text {
+    font-weight: 700;
+}
+/* 去结算 */
+.bottom .chuli .comput {
+    color: #fff;
+    background-color: #62BAE7;
+    height: 65rpx;
+    border-radius: 50rpx;
+    text-align: center;
+    line-height: 65rpx;
+    padding: 0 30rpx;
+    font-size: 28rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottomText {
+    text-align: center;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+    color: #666;
+    margin-bottom: 100rpx;
+}

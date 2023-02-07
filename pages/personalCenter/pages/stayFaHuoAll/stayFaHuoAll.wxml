@@ -1,0 +1,31 @@
+<!--pages/stayFaHuoAll/stayFaHuoAll.wxml-->
+<!-- 全部待发货 -->
+<view class="w">
+    <!-- 商品 -->
+    <view class="shop" wx:for="{{result}}" wx:key="_id" bindtap="goDetail" data-did="{{item._id}}">
+        <view class="shopTop">
+            <image src="{{item.productSrc[0]}}"></image>
+            <!-- 商品名 + 价格 -->
+            <view class="titlePrice">
+                <!-- 商品名 -->
+                <view class="title">
+                    {{item.productName}}
+                </view>
+                <!-- 价格 -->
+                <view class="price">
+                    <text class="pri">￥{{item.productPrice}}</text> <text class="pNum">×{{item.productNum}}</text>
+                </view>
+                <!-- 时间 -->
+                <view class="time">下单时间：{{item.time}}</view>
+            </view>
+        </view>
+
+        <!-- <view class="shopBottom">
+            <view class="status">{{status}}</view>
+            <view class="queding" bindtap="">确定收货</view>
+        </view> -->
+    </view>
+    <view class="bottomText">
+        已经到底啦~~~
+    </view>
+</view>

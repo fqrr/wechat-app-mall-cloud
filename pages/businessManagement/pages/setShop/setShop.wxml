@@ -1,0 +1,17 @@
+<!--pages/setShop/setShop.wxml-->
+<view class="w">
+    <!-- 商品 -->
+    <view wx:for="{{res}}" wx:key="_id" class="item" data-sid="{{item._id}}" bindtap="goSet">
+        展示图:<view class="photo">
+            <image src="{{item}}" wx:for="{{item.src}}" wx:key="index"></image>
+        </view>
+        <view class="title">商品名称：{{item.name}}</view>
+        <view class="num">剩余数量：{{item.num}}</view>
+        <view class="price">价格：￥{{item.price}}</view>
+        <view class="sales">销量：{{item.sales}}</view>
+        <view class="cate">分类：{{item.shopcate}}</view>
+        详情图:<view class="photo"> 
+            <image class="detail" src="{{item}}" wx:for="{{item.detailSrc}}" wx:key="index"></image>
+        </view>
+    </view>
+</view>

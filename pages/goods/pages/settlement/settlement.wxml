@@ -1,0 +1,42 @@
+<!--pages/settlement/settlement.wxml-->
+<view class="con">
+    <!-- 地址 -->
+    <view class="contrlAddress">
+        <!-- 上部分地址 -->
+        <view class="address">
+            <view class="name">{{address.userName}} <text>{{address.telNumber}}</text></view>
+            <view class="address">{{address.provinceName}} {{address.cityName}} {{address.countyName}} {{address.detailInfo}}</view>
+        </view>
+        <!-- 下部分地址 -->
+        <view class="addAddress" bindtap="address">
+            选择地址
+        </view>
+    </view>
+
+    <!-- 订单 -->
+    <view class="controlDingdan">
+        <view class="dingdan" wx:for="{{res}}" wx:key="_id">
+            <image src="{{item.productSrc[0]}}"></image>
+            <!-- 商品名 + 价格 -->
+            <view class="titlePrice">
+                <!-- 商品名 -->
+                <view class="title">
+                    {{item.productName}}
+                </view>
+                <!-- 价格 -->
+                <view class="price">
+                    <text class="pri">￥{{item.productPrice}}</text> <text class="pNum">×{{item.productNum}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- <view>
+        批注:
+    </view> -->
+</view>
+
+<!-- 底部 -->
+<view class="bottom">
+    <text class="num">共{{allNum}}件,</text><text class="allPrice">合计:￥{{Allprice}}</text>
+    <view class="pay" bindtap="pay">付款</view>
+</view>

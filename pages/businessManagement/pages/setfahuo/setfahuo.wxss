@@ -1,0 +1,123 @@
+/* pages/stayfahuo/stayfahuo.wxss */
+/* 待发货 */
+page {
+    background-color: #F2F2F2;
+}
+.top {
+    color: #fff;
+    font-size: 30rpx;
+    /* height: 160px; */
+    background-color: #62BAE7; /* 不支持线性的时候显示 */
+    background-image: linear-gradient(to bottom right, #62BAE7  , #A2BCB2);
+    text-align: center;
+    line-height: 230rpx;
+}
+
+/* 订单 */
+.dingdan {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 2rpx solid #ccc;
+    padding-left: 20rpx;
+    padding: 20rpx 0 20rpx 20rpx;
+    /* padding-bottom: 10rpx; */
+}
+.dingdan image {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+
+.dingTiem{
+    display: flex;
+    flex-direction: column;
+}
+.dingTiem .ding{
+    color: #83BBCC;
+    margin-bottom: 10rpx;
+    font-size: 36rpx;
+}
+.dingTiem .time{
+    font-size: 24rpx;
+    color: #999;
+    margin-bottom: 10rpx;
+
+}
+/* 收货 */
+.shouhuo {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    margin-top: 20rpx;
+    padding: 20rpx 0 20rpx 20rpx;
+}
+.shouhuo image{
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+.controlAddress{
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    width: 620rpx;
+}
+.controlAddress .address{
+    margin-top: 10rpx;
+    word-break: break-all;
+}
+
+/* 单个订单 */
+.shop {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20rpx 0;
+    background-color: #fff;
+    /* border-radius: 30rpx; */
+}
+
+.shop image {
+    width: 165rpx;
+    height: 165rpx;
+    border-radius: 10rpx;
+    margin-left: 10rpx;
+}
+
+/* 商品名 + 价格 */
+.shop .titlePrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+/* 商品名 */
+.shop .titlePrice .title {
+    width: 490rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* .shop .titlePrice .price {} */
+
+.shop .titlePrice .pNum {
+    margin-left: 10rpx;
+    color: #999;
+    font-size: 24rpx;
+}
+
+
+.iptShou,.iptShou1{
+    border: 2rpx solid #999;
+}
+.iptShou1{
+    width: 600rpx;
+    height: 150rpx;
+}

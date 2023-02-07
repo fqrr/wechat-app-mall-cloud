@@ -1,0 +1,53 @@
+<!--pages/car/car.wxml-->
+<!-- 购物车页面 -->
+<view class="list">
+    <view class="carList" wx:for="{{carList}}" wx:key="_id">
+        <!-- 复选框 -->
+        <checkbox-group bindchange="checkboxChange" data-id="{{item._id}}">
+            <checkbox value="{{item._id}}" checked="{{item.productChecked}}" ></checkbox>
+        </checkbox-group>
+        <!-- mode="widthFix" -->
+        <!-- 图片 -->
+        <image mode="widthFix" src="{{item.productSrc[0]}}"></image>
+        <!-- 内容 -->
+        <view class="content">
+            <!-- 标题 -->
+            <view class="title">{{item.productName}}</view>
+            <!-- 价格数量 -->
+            <view class="priNum">
+                <!-- 价格 -->
+                <view class="price">￥{{item.productPrice}}</view>
+                <!-- 控制数量 -->
+                <view class="controlNum">
+                    <!-- 数量 - 1 -->
+                    <view class="add1" bindtap="add_reduce" data-i="0" data-num="{{item.productNum}}" data-carid="{{item._id}}">-</view>
+                    <!-- 数量 -->
+                    <view class="ipt">{{item.productNum}}</view>
+                    <!-- 数量 + 1 -->
+                    <view class="add1" bindtap="add_reduce" data-i="1" data-num="{{item.productNum}}" data-carid="{{item._id}}">+</view>
+                </view>
+            </view>
+        </view>
+        <!-- 删除 -->
+        <view class="de" bindtap="deleteItem" data-carid="{{item._id}}">删除</view>
+    </view>
+</view>
+
+<!-- 底部提醒 -->
+<view class="bottomText">
+    已经到底啦~~~
+</view>
+
+<!-- 结算行 -->
+<view class="bottom">
+    <checkbox bindtap="checkAll" checked="{{isAll}}" class="allSelect">全选</checkbox>
+    <!-- 删除选中 -->
+    <view bindtap="deleteCar" class="deAll">删除选中</view>
+    <!-- 总计 + 去结算 -->
+    <view class="chuli">
+        <!-- 总计 -->
+        <view class="allPrice">总计:<text>￥{{Allprice}}</text></view>
+        <!-- 去结算 -->
+        <view class="comput" bindtap="jiesuan">去结算({{allNum}}件)</view>
+    </view>
+</view>

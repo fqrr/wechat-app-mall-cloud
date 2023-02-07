@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<!-- 商家登录 -->
+<view class="control">
+    <view class="photo">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F80%2F33%2F81574d714bca17f.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672485570&t=1901ae6141cf4209ef93b600bc4d2722"></image>
+    </view>
+    <form class="login" bindsubmit="formSubmit">
+        <view class="uname">
+            <image src="https://img1.baidu.com/it/u=3893002720,2815907203&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+            <input name="admin" type="text" placeholder="请输入账号"/>
+        </view>
+        <view class="pwd">
+            <image src="https://img2.baidu.com/it/u=2995341836,3945016855&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+            <input name="pwd" type="password" placeholder="请输入密码"/>
+        </view>
+        <view class="email">
+            <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F41%2F08%2F581340620645e_610.jpg&refer=http%3A%2F%2Fbpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672451782&t=0972f063e483824f2355277f9ee6db2f"></image>
+            <input name="email" type="text" placeholder="(选填)注册人必填，注册过无需填"/>
+        </view>
+        <button form-type="submit" class="btnLogin" style="width:90%;height:130rpx">登录/注册</button>
+    </form>
+</view>

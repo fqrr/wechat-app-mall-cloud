@@ -1,0 +1,73 @@
+/* pages/shouHuoAll/shouHuoAll.wxss */
+page {
+    background-color: #F2F2F2;
+}
+
+.w {
+    padding: 0 20rpx;
+}
+
+/* 单个订单 */
+.shop {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 30rpx;
+    margin-top: 20rpx;
+}
+
+.shop image {
+    width: 165rpx;
+    height: 165rpx;
+    border-radius: 10rpx;
+    margin-left: 10rpx;
+}
+
+/* 商品名 + 价格 */
+.shop .titlePrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* 商品名 */
+.shop .titlePrice .title {
+    width: 460rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* .shop .titlePrice .price {} */
+
+.shop .titlePrice .pNum {
+    margin-left: 10rpx;
+    color: #999;
+    font-size: 24rpx;
+}
+
+.time {
+    font-size: 26rpx;
+    color: #999;
+}
+
+.shopTop{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20rpx;
+}
+.shopBottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx 50rpx;
+    align-items: center;
+}
+.queding{
+    border: 2rpx solid #9FBCB4;
+    color: #9FBCB4;
+    padding: 10rpx 20rpx;
+    border-radius: 30rpx;
+}

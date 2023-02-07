@@ -1,0 +1,55 @@
+/* pages/login/login.wxss */
+/* 商家登录 */
+.photo {
+    width: 600rpx;
+    height: 600rpx;
+    display: flex;
+    margin: 20rpx auto;
+}
+/* yeyeye */
+.photo image {
+    width: 100%;
+    height: 100%;
+}
+
+.uname,
+.pwd,
+.email {
+    width: 600rpx;
+    height: 90rpx;
+    border-radius: 50rpx;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+
+/* logo */
+.login .uname>image,
+.login .pwd>image,
+.login .email>image {
+    width: 50rpx;
+    height: 50rpx;
+    padding-left: 15rpx;
+}
+
+/* input */
+.login .uname>input,
+.login .pwd>input,
+.login .email>input {
+    width: 450rpx;
+    height: 70rpx;
+    /* border: 2rpx solid #333; */
+    padding-left: 20rpx;
+}
+.btnLogin {
+    margin:  0 auto;
+    margin-top: 50rpx;
+    background-color: #62BAE7;
+    padding: 20rpx 20rpx;
+    color: #fff;
+    border-radius: 20rpx;
+}

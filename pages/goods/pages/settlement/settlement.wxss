@@ -1,0 +1,139 @@
+/* pages/settlement/settlement.wxss */
+page {
+    background-color: #EBEBEB;
+}
+
+.con {
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+
+/* 地址 */
+.contrlAddress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20rpx;
+    border-radius: 26rpx;
+}
+
+/* 上部分地址 */
+.address {
+    font-size: 30rpx;
+    font-weight: 400;
+    width: 100%;
+    word-break: break-all;
+}
+
+.name {
+    font-size: 36rpx;
+    font-weight: 700;
+}
+
+.name text {
+    font-weight: 400;
+    color: #999999;
+    font-size: 24rpx;
+}
+
+.address {
+    font-size: 30rpx;
+    margin-bottom: 10rpx;
+}
+
+/* 下部分地址 */
+.addAddress {
+    color: #E18161;
+    border: 2rpx solid #E18161;
+    border-radius: 12rpx;
+    padding: 10rpx 26rpx;
+}
+
+
+/* 订单 */
+.controlDingdan {
+    margin-top: 20rpx;
+    background-color: #fff;
+    border-radius: 30rpx;
+}
+
+/* 单个订单 */
+.dingdan {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20rpx 0;
+}
+
+.dingdan image {
+    width: 165rpx;
+    height: 165rpx;
+    border-radius: 10rpx;
+    margin-left: 10rpx;
+}
+
+/* 商品名 + 价格 */
+.dingdan .titlePrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* 商品名 */
+.dingdan .titlePrice .title {
+    width: 460rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* .dingdan .titlePrice .price {} */
+
+.dingdan .titlePrice .pNum {
+    margin-left: 10rpx;
+    color: #999;
+    font-size: 24rpx;
+}
+
+
+/* 底部 */
+.bottom {
+    width: 100%;
+    height: 100rpx;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20rpx;
+}
+
+.bottom .num {
+    color: #999;
+    font-size: 24rpx;
+    margin-right: 16rpx;
+}
+
+.bottom .allPrice {
+    margin-right: 16rpx;
+    color: #62BAE7;
+    font-weight: 700;
+}
+
+.pay {
+    background-color: #fff;
+    width: 160rpx;
+    height: 70rpx;
+    border-radius: 50rpx;
+    color: #fff;
+    background-color: #62BAE7;
+    text-align: center;
+    line-height: 70rpx;
+    margin-right: 20rpx;
+}

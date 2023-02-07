@@ -1,0 +1,54 @@
+/* pages/Cate/Cate.wxss */
+/* 分类 */
+page{
+    height: 100%;
+}
+.all {
+    display: flex;
+    justify-content:space-between;
+}
+/* 左分类 */
+.fenlei{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8F8F8;
+}
+.fenlei .flfor{
+    padding: 22rpx 10rpx;
+    /* background-color: #fff; */
+    /* border: 1px solid skyblue; */
+    font-size: 28rpx;
+}
+.fenlei .flfor view{
+    text-align: center;
+}
+
+
+/* 右分类 */
+.fenlei1{
+    height: 100vh;
+    width: 75%;
+}
+.fenlei1 .flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20rpx;
+}
+.fenlei1 .flfor2{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rpx;
+}
+.fenlei1 .flfor2 image {
+    width: 110rpx;
+    height: 110rpx;
+    margin-bottom: 10rpx;
+}
+.fenlei1 .flfor2 view {
+    font-size: 24rpx;
+}

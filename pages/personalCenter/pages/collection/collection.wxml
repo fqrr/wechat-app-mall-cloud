@@ -1,0 +1,23 @@
+<!-- 收藏 -->
+<view class="w">
+    <!-- 商品 -->
+    <view class="shop" wx:for="{{result}}" wx:key="_id" bindtap="goDetail" data-did="{{item._id}}">
+        <view class="shopTop">
+            <image src="{{item.src[0]}}"></image>
+            <!-- 商品名 + 价格 -->
+            <view class="titlePrice">
+                <!-- 商品名 -->
+                <view class="title">
+                    {{item.name}}
+                </view>
+                <!-- 价格 -->
+                <view class="price">
+                    <text class="pri">￥{{item.price}}</text> <text class="pNum">销量：{{item.sales}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottomText">
+        已经到底啦~~~
+    </view>
+</view>

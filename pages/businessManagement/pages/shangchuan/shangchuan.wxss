@@ -1,0 +1,70 @@
+/* pages/shangchuan/shangchuan.wxss */
+page {
+    width: 100%;
+    box-sizing: border-box;
+}
+image {
+    width: 200rpx;
+    height: 200rpx;
+}
+.f {
+    padding: 10rpx 30rpx;
+    width: 100%;
+}
+.pName {
+    display: flex;
+    justify-content: space-between;
+}
+.pName view{
+    margin-right: 20rpx;
+}
+.pName textarea{
+    width: 580rpx;
+    height: 150rpx;
+    border: 2rpx solid #999;
+}
+
+.p {
+    display: flex;
+    margin-top: 20rpx;
+    align-items: center;
+}
+.p input{
+    border: 2rpx solid #999;
+}
+
+.cate {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20rpx;
+}
+.cate .cateItem {
+    width: 240rpx;
+    margin-top: 10rpx;
+}
+/* 商品展示图 */
+.zhan{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.zhanshi{
+    width: 200rpx;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    display: flex;
+    align-items: center;
+}
+.zhanshi image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.zhanshi .detail{
+    width: 80rpx;
+    height: 120rpx;
+}
+
+.sZhanShi,.sDetail,.sub{
+    margin-top: 20rpx;
+}

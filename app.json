@@ -1,0 +1,92 @@
+{
+  "pages":[
+    "pages/tabBar/index/index",
+    "pages/tabBar/Cate/Cate",
+    "pages/tabBar/car/car",
+    "pages/tabBar/me/me"
+
+  ],
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#62BAE7",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color": "#000000",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+      "pagePath":  "pages/tabBar/index/index",
+      "text": "首页",
+      "iconPath":"./images/index.png",
+      "selectedIconPath":"./images/indexSelect.png"
+    },
+    {
+      "pagePath":  "pages/tabBar/Cate/Cate",
+      "text": "分类",
+      "iconPath":"./images/cate.png",
+      "selectedIconPath":"./images/cateSelect.png"
+    },
+    {
+      "pagePath":  "pages/tabBar/car/car",
+      "text": "购物车",
+      "iconPath":"./images/car3.png",
+      "selectedIconPath":"./images/car1.png"
+    },
+    {
+      "pagePath":  "pages/tabBar/me/me",
+      "text": "我的",
+      "iconPath":"./images/me.png",
+      "selectedIconPath":"./images/me1.png"
+    }
+    
+    ]
+  },
+  "subpackages": [
+    {
+      "root": "pages/goods",
+      "pages": [
+        "pages/shopDetail/shopDetail",
+        "pages/productDetail/productDetail",
+        "pages/settlement/settlement"
+      ]
+    }, {
+      "root": "pages/personalCenter",
+      "pages": [
+        "pages/address/address",
+        "pages/collection/collection",
+        "pages/finishOrder/finishOrder",
+        "pages/login/login",
+        "pages/personal/personal",
+        "pages/shouHuoAll/shouHuoAll",
+        "pages/stayfahuo/stayfahuo",
+        "pages/stayFaHuoAll/stayFaHuoAll"
+      ]
+    },
+    {
+      "root": "pages/businessManagement",
+      "pages": [
+        "pages/businessControl/businessControl",
+        "pages/order/order",
+        "pages/setfahuo/setfahuo",
+        "pages/setShop/setShop",
+        "pages/setShopDetail/setShopDetail",
+        "pages/shangchuan/shangchuan"
+      ]
+    }
+  ],
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.userFuzzyLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getFuzzyLocation",
+    "chooseAddress",
+    "chooseLocation"
+  ]
+}

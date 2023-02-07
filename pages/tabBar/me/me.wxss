@@ -1,0 +1,99 @@
+/* 个人中心 */
+page {
+    background-color: #F2F2F2;
+}
+
+/* 头像 + 名称 */
+.user{
+    display: flex;
+    padding: 10rpx 20rpx;  
+    flex-wrap: wrap;
+    align-items: center;  
+    background:linear-gradient(90deg,rgb(23, 152, 238),rgb(165, 226, 235));
+    width: 100%;
+    color: #fff;
+    margin-bottom: 20rpx;
+}
+.user image {
+    width: 190rpx;
+    height: 190rpx;
+    border: 1rpx solid #dedede;
+    margin-right: 20rpx;
+}
+.user text {
+    font-size: 50rpx;
+}
+/* 我的订单 */
+.content {
+    padding: 0rpx 20rpx;
+}
+.dingdan {
+    background-color: #fff;
+    padding: 0 0 20rpx 0 ;
+    border-radius: 30rpx;
+}
+/* 我的订单 */
+.dingdan .dingdanText {
+    padding: 20rpx 20rpx;
+    font-weight: 700;
+    font-size: 30rpx;
+}
+/* 图标 + 文字 */
+.dingdan .controlIcon  {
+    display: flex;
+    justify-content: space-around;
+}
+.dingdan .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24rpx;
+    position: relative;
+}
+.dingdan image {
+    width: 60rpx;
+    height: 60rpx;
+    padding-bottom: 10rpx;
+    z-index: 1;
+
+}
+
+/* 收藏 + 商家入口 */
+.address {
+    /* padding: 0 20rpx; */
+    margin-top: 20rpx;
+}
+.address .addItem{
+    display: flex;
+    align-items: center;
+    padding:  20rpx 30rpx;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    border-radius: 30rpx;
+}
+.address .addItem image {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 10rpx;
+}
+/* .address .addItem:nth-of-type(2) image {
+    width: 50rpx;
+    height: 50rpx;
+} */
+.address .addItem view {
+    font-size: 28rpx;
+}
+
+.poNum{
+    position: absolute;
+    border: 6rpx solid #62BAE7;
+    border-radius: 50rpx;
+    right: -20rpx;
+    top: -24rpx;
+    line-height: 40rpx;
+    text-align: center;
+    z-index: 0;
+    padding: 0 12rpx;
+    color: #62BAE7;
+    font-weight: 700;
+}

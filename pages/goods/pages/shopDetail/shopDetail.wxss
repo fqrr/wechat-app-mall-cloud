@@ -1,0 +1,123 @@
+/* pages/shopDetail/shopDetail.wxss */
+page {
+    background-color: #F2F2F2;
+}
+/* 图片区 */
+.top{
+    width: 100%;
+    height: 660rpx;
+}
+.top swiper {
+    width: 100%;
+    height: 100%;
+}
+.top swiper-item {
+    width: 100%;
+    height: 100%;
+}
+.top swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+
+/* 内容 */
+.content {
+    width: 100%;
+    padding: 0 40rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0 0 20rpx 20rpx;
+}
+.mon_sal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sales{
+    font-size: 24rpx;
+}
+.money {
+    color: #F2270C;
+    font-size: 46rpx;
+    font-weight: 700;
+    margin: 20rpx 0;
+}
+.title {
+    width: 100%;
+    font-weight: 700;
+    padding-bottom: 20rpx;
+}
+
+/* 商品介绍 */
+.jieshao{
+    text-align: center;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-top: 20rpx;
+    font-size: 28rpx;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 20rpx 20rpx;
+}
+.shopPhoto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100rpx;
+}
+.shopPhoto image {
+    width: 100%;
+}
+.shopPhoto .bottomText{
+    height: 40rpx;
+    font-size: 24rpx;
+    color: #666;
+    background-color: #F2F2F2;
+    text-align: center;
+    line-height: 40rpx;
+}
+/* 购物车，立即购买 */
+.carBuy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 95rpx;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow:  0 0 3rpx #dedede;
+    align-items: center;
+}
+.car,
+.buy {
+    width: 210rpx;
+    font-size: 28rpx;
+    /* border: 2rpx solid ; */
+    height: 75rpx;
+    border-radius: 100rpx;
+    line-height: 75rpx;
+    text-align: center;
+    color: #fff;
+}
+.car {
+    background-color: #4FB1E4;
+}
+.buy {
+    background-color: #FFBF0D;
+}
+.caricon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caricon image {
+    width: 40rpx;
+    height: 40rpx;
+}
+.caricon text {
+    font-size: 22rpx;
+}

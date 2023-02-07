@@ -1,0 +1,17 @@
+/* pages/businessControl/businessControl.wxss */
+.w {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30rpx;
+}
+.item image{
+    width: 80rpx;
+    height: 80rpx;
+}
